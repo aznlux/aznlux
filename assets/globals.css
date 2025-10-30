@@ -2,13 +2,13 @@
 
 @theme {
   --font-family: var(--font);
-  
-  --color-dark: #1E1E24;
-  --color-light: #EAEAF0;
-  --color-primary: #527ACC;
-  --color-success: #52CC7A;
-  --color-error: #CC5252;
-  --color-warning: #CCA352;
+
+  --color-dark: #1e1e24;
+  --color-light: #eaeaf0;
+  --color-primary: #527acc;
+  --color-success: #52cc7a;
+  --color-error: #cc5252;
+  --color-warning: #cca352;
 
   --text-sm: 12px;
   --text-md: 16px;
@@ -21,7 +21,7 @@
   --spacing: 0.25rem;
 
   --blur: 6px;
-  
+
   --animate-spin: spin 1s linear infinite;
 
   @keyframes spin {
@@ -55,6 +55,11 @@
 
 @utility glass {
   background: color-mix(in srgb, var(--color-dark) 40%, transparent);
-  box-shadow: 0px 0px 3px color-mix(in srgb, var(--color-dark) 40%, transparent),inset -1px -1px 1px color-mix(in srgb, var(--color-light) 60%, transparent),inset 1px 1px 1px color-mix(in srgb, var(--color-light) 60%, transparent),inset -6px -6px 6px color-mix(in srgb, var(--color-light) 20%, transparent),inset 6px 6px 6px color-mix(in srgb, var(--color-light) 20%, transparent);
+  box-shadow:
+    0px 0px 3px color-mix(in srgb, var(--color-dark) 40%, transparent),
+    inset -1px -1px 1px color-mix(in srgb, var(--color-light) 60%, transparent),
+    inset 1px 1px 1px color-mix(in srgb, var(--color-light) 60%, transparent),
+    inset -6px -6px 6px color-mix(in srgb, var(--color-light) 20%, transparent),
+    inset 6px 6px 6px color-mix(in srgb, var(--color-light) 20%, transparent);
   backdrop-filter: blur(var(--blur));
 }
